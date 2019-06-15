@@ -1,0 +1,61 @@
+
+<HTML>
+<HEAD>
+<TITLE>.:: Alguns scripts ::.</TITLE>
+<META NAME="Author" CONTENT="Wellington Marinheiro">
+ </HEAD>
+ <script>
+ function Enum(num){
+	if (document.all)
+		var tecla = event.keyCode;
+	else if(document.layers)
+		var tecla = num.which;
+		if (tecla > 47 && tecla < 58)
+			return true;
+		else
+			{
+				if (tecla != 8)
+					event.keyCode = 0;
+				else
+					return true;
+			}
+}
+ </script>
+ <BODY>
+	<%  
+	if request.queryString("at")= "" then
+	%>
+<CENTER>
+SOMENTE PERMITINDO A DIGITAÇÃO DE NUMEROS EM UM DETERIMINADO CAMPO DO FORMULARIO<BR>
+	<hr>
+	<form name="form" action="chnum.asp?at=1" method="post">
+		<table border="1" bgcolor=#ffffff width=40% align="center">
+			<tr>
+				<td><B>Um texto</B>
+				<INPUT TYPE="text" NAME="txt"><BR>
+				Aceita tudo
+ 
+			<tr>
+				<td><B>Informe um Numero</B>
+				<INPUT TYPE="text" NAME="numero" onKeyPress="return Enum(event)"><BR>
+				Tente digitar algo diferente de um número
+ 
+				<tr>
+					<td colspan="2" align="center">
+					<INPUT TYPE="submit" value="Enviar">
+				</tr>
+			</table>
+		</form>
+	</CENTER>
+<%
+else
+	response.write "<div align=center><B>Resultado:</B><BR>"
+		response.write "Texto informado: " & request.Form("txt")
+		response.write "<BR>Numero: " & request.Form("numero")
+		response.write "<BR><A HREF='chnum.asp'>Novo Teste</A>"
+		response.write "</div>"
+end If
+%>
+ 
+</body>
+</html>

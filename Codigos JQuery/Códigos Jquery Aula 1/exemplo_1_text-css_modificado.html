@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exemplo de uso de jQuery</title>
+</head>
+
+<body>
+	<h1 id="titulo">Título</h1>
+	<a href="#" id="link1">Executar JS1</a>
+	<a href="#" id="link2">Executar JS2</a>
+	<a href="#" id="link3">Executar JS3</a>
+	
+	<script src="jquery.js"></script>
+	<script>
+		$("#link1").click(function () {
+			$("#titulo").css("color", "red")
+				.text("Corinthians é o melhor time do brasil!!!")
+				.hide().fadeToggle();
+		});
+		$("#link2").click(function () {
+			$("#titulo").css("color", "blue")
+				.text(" tem que respeitar!!!")
+				.hide().fadeToggle();
+		});
+		$("#link3").click(function () {
+			$("#titulo").css("color", "grey")
+				.text(" po$#@!!!")
+				.hide().fadeToggle();
+		});
+
+	</script>
+</body>
+
+</html>

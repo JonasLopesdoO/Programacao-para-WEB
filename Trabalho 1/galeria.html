@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilo.css">
+	<title>FITFOOD</title>
+	
+</head>
+<body>
+	
+	<header>
+		<div class= "menu">
+
+			<div class="navbar">
+				<a id ="marca">FitFood </a>
+				<div class ="menubar">
+					<a href = "index.html" > Home</a>
+					<a href = "sobre.html">Sobre</a>
+					<a href = "galeria.html" class="active">Galeria</a>
+					<a href = "contato.html">Contato</a>
+				</div>
+			</div>
+			
+			<div class= "cabecalho">
+				<img src="img/logo.jpg"	alt="FitFood" id="logo">
+				<img src="img/capa2.jpg" alt="FitFood" id="capa">
+			</div>	
+		</div>
+		<script src="js/jquery.min.js"></script>
+
+		<script>
+	        $(document).ready(function () {
+	            $("#btn1").click(function () {
+	                $("span").append('<div class="produtos"><img src = "img/chafrutasvermelhas.jpg" alt="Cha frutas vermelhas"><p align="center">Chá de frutas vermelhas</p><p align="center" style="color: #008B00"> R$89,00</p></div>		<!--Chá de frutas vermelhas -->')
+
+	                $("span").append('<div class="produtos"><img src = "img/barradolcedilatte.jpg" alt="Barra dolce di latte"><p align="center">Barra de Proteína Dolce di latte</p><p align="center" style="color: #008B00"> R$89,00</p></div><!--Barra dolce di latte -->')
+
+	                 $("span").append('<div class="produtos"><img src = "img/shakecapucchino.jpg" alt="Shake Capuccino"><p align="center">Shake Capuccino</p><p align="center" style="color: #008B00"> R$98,00</p></div>		<!--Shake capuccino -->')
+
+	                  $("span").append('<div class="produtos"><img src = "img/shakebaunilha.jpg" alt="Shake Baunilha">			<p align="center">Shake Baunilha</p><p align="center" style="color: #008B00"> R$98,00</p></div>		<!--Shake baunilha -->')
+
+	                  $("span").append('<div class="produtos"><img src = "img/shakebanana.png" alt="Shake Banana">			<p align="center">Shake Banana</p><p align="center" style="color: #008B00"> R$98,00</p></div>		<!--Shake banana -->')
+
+	                  $("span").append('<div class="produtos"><img src = "img/extremepush.png" alt="Extreme Push">			<p align="center">Extreme Push</p><p align="center" style="color: #008B00"> R$120,00</p></div>		<!--Extreme Push -->')
+
+	                  $("span").append('<div class="produtos"><img src = "img/esfoliante.jpg" alt="Esfoliante"><p align="center">Esfoliante</p><p align="center" style="color: #008B00"> R$98,00</p></div><!--esfoliante -->')
+
+	                    $("span").append('<div class="produtos"><img src = "img/energetico.jpg" alt="Energetico"><p align="center">Energetico</p><p align="center" style="color: #008B00"> R$10,00</p></div><!--energetico -->')
+
+	                  $("span").append('<div class="produtos"><img src = "img/corps.jpg" alt="Gel Corps"><p align="center">Gel Corps</p><p align="center" style="color: #008B00"> R51,50</p></div><!--Corps -->')
+
+	                  $("span").append('<div class="produtos"><img src = "img/chalimao.jpg" alt="Chá de Limão"><p align="center">Chá de limao</p><p align="center" style="color: #008B00"> R$89,00</p></div><!--Cha de limao -->')
+
+	                	.hide().fadeToggle();
+	            });
+	       		
+	       		$(document).ready(function () {
+		            $("button").click(function () {
+		                $("#btn1").remove();
+		            });
+	        	});
+	            
+	    	});
+    	</script>
+
+	</header>
+
+	<section class="container">
+		<br>
+		<h2 align="center">Galeria de Produtos</h2>
+		<br><br>
+		<div class="produtos">
+			<img src = "img/barraalfajor.png" alt="barra de alfajor">
+			<p align="center">Barra de Proteínas Alfajor</p>
+			<p align="center" style="color: #008B00">R$ 16,00</p>
+		</div>
+		<!--Barra alfajor -->
+
+		<div class="produtos">
+			<img src = "img/barrabrownie.jpg" alt="barra de Brownie">
+			<p align="center">Barra de Proteínas Brownie</p>
+			<p align="center" style="color: #008B00">R$ 16,00</p>
+		</div>
+		<!--Barra Brownie -->
+
+		<div class="produtos">
+			<img src = "img/barradeacai.jpg" alt="barra de açaí">
+			<p align="center">Barra de Açaí</p>
+			<p align="center" style="color: #008B00">R$ 10,00</p>
+		</div>
+		<!--Barra açaí -->
+
+		<div class="produtos">
+			<img src = "img/glutamina.png" alt="glutamina">
+			<p align="center">Glutamina</p>
+			<p align="center" style="color: #008B00">R$ 120,00</p>
+		</div>
+		<!--Glutamina -->
+
+		<div class="produtos">
+			<img src = "img/bcaa.png" alt="BCAA">
+			<p align="center">BCAA Hinode </p>
+			<p align="center" style="color: #008B00">R$ 120,00</p>
+		</div>
+		<!--BCAA -->
+
+		<div class="produtos">
+			<img src = "img/wheychocolate.png" alt="Whey Protein Chocolate">
+			<p align="center">Whey Protein Chocolate</p>
+			<p align="center" style="color: #008B00">R$ 200,00</p>
+		</div>
+		<!--WheyProteinChocolate -->
+
+		<div class="produtos">
+			<img src = "img/wheymorango.png" alt="Whey Protein Morango">
+			<p align="center">Whey Protein Morango</p>
+			<p align="center" style="color: #008B00">R$ 200,00</p>
+		</div>
+		<!--WheyProteinMorango -->
+
+		<div class="produtos">
+			<img src = "img/shakemorango.jpg" alt="Shake Morango">
+			<p align="center">Shake Morango</p>
+			<p align="center" style="color: #008B00">R$ 98,00</p>
+		</div>
+		<!--Shake Morango -->
+
+		<div class="produtos">
+			<img src = "img/shakemilhoverde.jpg" alt="Shake Milho Verde">
+			<p align="center">Shake Milho Verde</p>
+			<p align="center" style="color: #008B00">R$ 98,00</p>
+		</div>
+		<!--Shake milho verde -->
+
+		<div class="produtos">
+			<img src = "img/shakechocolate.jpeg" alt="Shake Chocolate">
+			<p align="center">Shake Chocolate</p>
+			<p align="center" style="color: #008B00"> R$98,00</p>
+		</div>
+		<!--Shake chocolate -->
+
+		<span></span>
+
+		<button id="btn1"><a>Ver mais produtos</a></button>
+
+	</section>
+	
+	<footer>
+		<div class = "rodape">
+			<br>
+			<p>Telefone: (88) 3462-0532 ou (88) 3410-5592</p>
+			<p>Desenvolvido por: Jonas Lopes</p>
+			<p>Data de fundação: 08 de maio de 2018</p>
+		</div>
+	</footer>
+	
+
+</body>
+</html>

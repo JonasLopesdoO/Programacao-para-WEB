@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Usando eventos no Javascript</title>
+
+</head>
+<body>
+
+Quantidade: <input type="text" id="qtd" onchange="result()">
+Preço: <input type="text" id="preco" onchange = "result()">
+Total: <input type="text" id="total" disabled="" />
+
+<p> Resultado: </p>
+<p id = "aqui"> </p>
+
+<script>
+function result(){
+	var qtd = document.getElementById("qtd").value;
+	var preco = document.getElementById("preco").value;
+	var total = parseInt(qtd) * parseInt(preco);
+
+	document.getElementById("aqui").innerHTML = Number(total);
+	document.getElementById("total").value = Number(total);
+
+}
+</script>
+</body>
+</html>

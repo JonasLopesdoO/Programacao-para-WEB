@@ -1,0 +1,287 @@
+*{
+	padding: 0;
+	margin:0;
+}
+
+body{
+	color:	#333333;
+	background: #E8E8E8;
+	font-family:	"Lucida	Sans Unicode", "Lucida Grande", sans-serif;	
+
+}
+
+img {
+   max-width: 100%;
+}
+
+footer{
+	clear:left;
+}
+
+header	{
+	position:	relative;
+}
+
+.topico{
+	font-weight: italic;
+	font-size: 20px;
+}
+
+#logo{
+	width : 665px;
+	height: 350px;
+	
+}
+
+#capa{
+	width : 665px;
+	height: 350px;
+	
+}
+
+#capaSobre{
+	width : 840px;
+	height: 350px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+#marca{
+	padding-left: 150px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.container{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#accordion{
+	padding-left: 150px;
+	padding-right: 150px;
+	border: 5px;
+	border-color: #66CD00;
+	border: ridge;
+}
+
+.cabecalho {
+	position:top;
+	margin-right: auto;
+	margin-left: auto;
+	background: #66CD00;
+}
+
+.rodape{
+	
+	
+	padding-bottom: 40px;
+	background: #66CD00;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-family: "", 'Verdana', arial;
+	text-align: right;
+}
+
+.rodapeGaleria{
+	margin-top: 2100px;
+	padding-bottom: 40px;
+	background: #66CD00;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-family: "", 'Verdana', arial;
+	text-align: right;
+}
+
+.menu{
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #1C1C1C;
+	color: white;
+	font-family: "COURIER", 'Verdana', arial;
+}
+
+.produtos img{
+
+	max-width:300px;
+    max-height:200px;
+    width: 300px;
+    height: 300px;
+ }
+  
+ .produtos {
+ 	float: left;
+ 	padding-left: 55px;
+    width: 300px;
+    height: 300px;
+ }
+
+.navbar {
+  overflow: hidden;
+  background-color: #1C1C1C;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar #marca:hover {
+  background:  #1C1C1C;
+  color: white;
+}
+
+.marca{
+	background: black;
+  	color: black;
+}
+
+.navbar a.active {
+  background-color:  #66CD00;
+  color: white;
+  
+}
+
+.menubar{
+	margin-left: 900px;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+#btn1 {
+
+	font-family:	"Lucida	Sans Unicode", "Lucida Grande", sans-serif;	
+	font-size: 25px;
+	color: #000000;
+	padding: 10px 20px;
+
+	position:absolute;
+	top: 1660px;
+	left:600px;
+
+	margin:0px;
+	padding:0px;
+
+	background: -moz-linear-gradient(
+		top,
+		#0a590c 0%,
+		#ffffff 58%,
+		#000000);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#0a590c),
+		color-stop(0.58, #ffffff),
+		to(#000000));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px solid #02c941;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,1),
+		inset 0px 0px 3px rgba(59,54,59,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,1),
+		inset 0px 0px 3px rgba(59,54,59,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,1),
+		inset 0px 0px 3px rgba(59,54,59,1);
+	text-shadow:
+		0px -1px 0px rgba(56,56,56,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+input[type=text], [type=number], select, textarea {
+    width: 97%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.containerContato {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    #logo, #capa{
+    	width: 200px;
+    	height: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    #logo, #capa{
+    	width: 300px;
+    	height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+   body;
+   header;
+}

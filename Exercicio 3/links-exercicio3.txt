@@ -1,0 +1,19 @@
+carousel: https://getbootstrap.com/docs/3.3/examples/carousel/
+	  
+https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+
+
+thumbnail: https://www.w3schools.com/bootstrap/bootstrap_images.asp
+
+
+Toggleable / Dynamic Tabs: https://www.w3schools.com/bootstrap/bootstrap_tabs_pills.asp
+
+
+Hover Rows: https://www.w3schools.com/bootstrap/bootstrap_tables.asp
+
+
+The Modal Plugin: https://www.w3schools.com/bootstrap/bootstrap_modal.asp
+
+
+
+

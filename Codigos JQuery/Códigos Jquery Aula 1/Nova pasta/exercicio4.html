@@ -1,0 +1,178 @@
+
+<!DOCTYPE	html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo javaScript</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+		.navbar {
+			margin: 0;
+			font-size: medium;
+		}
+		.navbar .glyphicon {
+			color: white;
+		}
+		.row{
+			padding-top: 30px;
+		}
+
+        .panel,.panel2,.flip,.flip2 {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        .panel,.panel2 {
+            padding: 30px;
+            display: none;
+            background-color: #DCDCDC; 
+        }
+
+	</style>
+</head>
+
+<script src="js/jquery.min.js"></script>
+<body>
+	
+	<div class="jumbotron col-lg-6">
+		<div class="container">
+			<h1>Formulário questão 1 JQuery</h1>
+			<hr></hr>
+		</div>
+		
+		
+		<div id="tabela" class = "">
+	    	<table class="table table-hover">
+			   	 <thead>
+			      <tr>
+			        <th>IMC</th>
+			        <th>Classificação do IMC</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td style = "color:darkgreen">&lt; 16</td>
+					<td>Magreza grave</td>
+			      </tr>
+			      <tr>
+			        <td style = "color:darkgreen">16 a &lt; 18,5</td>
+					<td>Magreza leve</td>
+			      </tr>
+			      <tr>
+			        <td style = "color:darkgreen">18,5 a &lt; 25</td>
+					<td>Saudável</td>
+			      </tr>
+			      <tr>
+			        <td style = "color:darkgreen">25 a &lt; 30</td>
+					<td>Sobrepeso</td>
+			      </tr>
+			       <tr>
+			        <td style = "color:darkgreen">30 a &lt; 35</td>
+					<td>Obesidade grau I</td>
+			      </tr>
+			       <tr>
+			        <td style = "color:darkgreen">35 a &lt; 40</td>
+					<td>Obesidade grau II(severa)</td>
+			      </tr>
+			       <tr>
+			        <td style = "color:darkgreen">&gt; 40</td>
+					<td>Obesidade grau III(mórbida)</td>
+			      </tr>
+			      
+			    </tbody>
+		  	</table>
+	  	</div>
+	</div>
+	
+	<div class="container">
+		<div class="row" >
+			<form class="col-sm-12 col-lg-12" >
+				<div class = "row">
+					<fieldset>
+						<legend>&nbsp&nbsp Preencha os dados pedidos</legend>
+						<div class="form-group col-md-4">
+							<label for="altura">Altura</label>
+							<input type="number" class="form-control" id="altura" name="altura" 
+								   oninput="result()" autofocus/>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="peso">Peso</label>
+							<input type="number" class="form-control" id="peso" name="peso" oninput="result()"/> 
+						</div>
+						
+						<div class="form-group col-md-4">
+							<label for="imc">Seu IMC é de:</label>
+							<output type="text" class="form-control" id="imc" name="imc"> </output> 
+						</div>
+						
+					</fieldset>
+
+					<fieldset>
+						<div class="flip">Clique para ver o seu IMC</div>
+	    				<div class="panel" id = "aqui">&nbsp&nbsp Seu imc é de: &nbsp</div>	
+	    				<hr>
+	    				<div class="flip2">Clique para ver o sua Classificação</div>
+	    				<div class="panel2" id = "aqui2">&nbsp&nbsp Sua classificação é: &nbsp</div>
+					</fieldset>
+
+				</div> 
+				<!-- row -->				
+			</form>
+		</div>
+		<!-- container -->
+	</div>
+
+	<script>
+
+		function result(){
+			var altura = document.getElementById("altura").value;
+			var peso = document.getElementById("peso").value;
+			var imc = parseFloat(peso) / (parseFloat(altura) * parseFloat(altura));
+			
+			document.getElementById("imc").value = Number(imc);
+			document.getElementById("aqui").innerHTML = Number(imc);
+			
+			if(Number(imc) >= 0 & Number(imc) < 16){
+				document.getElementById("aqui2").innerHTML = "Magreza Grave";
+			}
+			if(Number(imc) >= 16 & Number(imc) < 18,5){
+				document.getElementById("aqui2").innerHTML = "Magreza Leve";
+			}
+			if(Number(imc) >= 18,5 & Number(imc) < 25){
+				document.getElementById("aqui2").innerHTML = "Saudável";
+			}
+			if(Number(imc) >= 25 & Number(imc) < 30){
+				document.getElementById("aqui2").innerHTML = "Sobrepeso";
+			}
+			if(Number(imc) >= 30 & Number(imc) < 35){
+				document.getElementById("aqui2").innerHTML = "Obesidade grau I";
+			}
+			if(Number(imc) >= 35 & Number(imc) < 40){
+				document.getElementById("aqui2").innerHTML = "Obesidade grau II";
+			}
+			if(Number(imc) >= 40){
+				document.getElementById("aqui2").innerHTML = "Obesidade grau III";
+			}
+		}
+		
+		$(document).ready(function (){
+        	$(".flip").click(function () {
+        		$(".panel").slideToggle("slow");
+        	});
+        });
+
+        $(document).ready(function () {
+        	$(".flip2").click(function() {
+        		$(".panel2").slideToggle("slow");
+        	});
+        });
+
+	</script>
+
+	
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
